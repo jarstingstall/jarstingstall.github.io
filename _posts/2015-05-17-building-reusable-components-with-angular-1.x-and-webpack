@@ -2,6 +2,7 @@
 layout: post
 title: Building Reusable Components with Angular and Webpack
 ---
+[This link](http://example.net/)
 
 While `Angular 2` is only in Developer Preview and the API is changing nearly everyday, there is one point that 
 has been made very clear: `Components Are King`. Libraries like `React` and tooling like `Webpack` have fully 
