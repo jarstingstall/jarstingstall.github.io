@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started With Webpack: Part One
+title: Getting Started With Webpack&#58; Part One
 ---
 
 [Webpack](http://webpack.github.io/) is a module bundler that allows us to write modular JavaScript code and not 
