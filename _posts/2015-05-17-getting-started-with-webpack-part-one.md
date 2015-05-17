@@ -3,7 +3,7 @@ layout: post
 title: "Getting Started With Webpack: Part One"
 ---
 
-This is the first installment in a series of posts on [Webpack](http://webpack.github.io/docs/), one of the newer kids on the frontend build tool block. In this first post we'll cover setting up Webpack on your machine and look at loading CommonJS modules in the browser.
+This is the first installment in a series of posts on [Webpack](http://webpack.github.io/docs/), a module bundler with a great set of features that distinguish it from similar tools. In this post we'll cover setting up Webpack on your machine and loading CommonJS modules in the browser.
 
 ## Setup
 
