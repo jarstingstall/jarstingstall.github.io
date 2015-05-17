@@ -3,7 +3,7 @@ layout: post
 title: "Getting Started With Webpack: Part One"
 ---
 
-[Webpack](http://webpack.github.io/) is a module bundler that allows us to write modular client-side JavaScript code without having to manage the order in which the modules are loaded in the browser. With support for CommonJS, AMD, and ES6 module systems, integrating 3rd party libraries with your application code has never been simpler. Wepback is an extremely powerful tool that is much more than a module bundler. This series will take you from the basics of installing and configuring Webpack to exploring some of it's more advanced features. 
+[Webpack](http://webpack.github.io/) is a module bundler that allows us to write modular client-side JavaScript code without having to manage the order in which the modules are loaded in the browser. With support for **CommonJS**, **AMD**, and **ES6** module systems, integrating 3rd party libraries with your application code has never been simpler. Wepback is an extremely powerful tool that is much more than a module bundler. This series will take you from the basics of installing and configuring Webpack to exploring some of it's more advanced features. 
 
 ## Setup
 
@@ -45,7 +45,7 @@ Let's test that we've set everything up properly:
 **src/index.js**  
 
 ```js
-document.querySelector('body').innerHTML = 'Hello Webpack!';
+console.log('Hello Webpack!');
 ```
 
 **public/index.html**  
@@ -68,7 +68,7 @@ Next, from the root of the project directory run:
 $ webpack
 ```
 
-Nothing too exciting yet, but Webpack should have created a file at **public/bundle.js**. If you load **public/index.html** in a browser you should see "Hello Webpack!".
+Nothing too exciting yet, but you should have a bundled file at **public/bundle.js**. If you load **public/index.html** in a browser you should see "Hello Webpack!" in the console.
 
 ## CommonJS Module Loading
 
