@@ -32,7 +32,7 @@ Next, create a fresh directory for the project with this simple structure:
 └── webpack.config.js
 ```
 
-Configuring Webpack is very straight foward. For the simplest of setups it only needs the location of the entry javascript file and where to put the bundled file:
+Configuring Webpack is very straight foward. For the simplest of setups it only needs the location of the entry javascript file and where to output the bundled file:
 
 ```js
 module.exports = {
