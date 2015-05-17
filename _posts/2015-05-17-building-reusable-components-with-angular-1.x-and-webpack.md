@@ -21,12 +21,11 @@ To get started, install the following npm packages globally:
 $ npm install webpack webpack-dev-server -g
 ```
 
-Next, create a fresh directory for the project and set up this structure:
+Next, create a fresh directory for the project with this simple structure:
 
 ```
 .
 ├── public
-│   ├── bundle.js
 │   └── index.html
 ├── src
 │   └── index.js
