@@ -24,7 +24,7 @@ Next, create a directory for the project with this structure:
 └── webpack.config.js
 ```
 
-Configuring Webpack is very straight foward. For the simplest of setups all that's needed is the location of the entry JavaScript file and where to output the bundled file.
+Configuring Webpack is very straight foward. For the simplest of setups all that's needed is the location of the main entry file and where to output the bundled file. In a future post we'll look at how to set up multiple entry and output files.
 
 **webpack.config.js** 
 
@@ -38,7 +38,7 @@ module.exports = {
 }
 ```
 
- Let's test that we've set everything up properly:
+Let's test that we've set everything up properly:
 
 **src/index.js**  
 
@@ -70,13 +70,13 @@ Nothing too exciting yet, but you should have a bundled file at **public/bundle.
 
 ## CommonJS Module Loading
 
-Now we'll look at Webpack's ability to load CommonJS style modules in the browser. First, install the popular JavaScript utility library [lodash](https://lodash.com/) in your project directory:
+Now we'll look at Webpack's ability to load CommonJS style modules in the browser. We'll use [lodash](https://lodash.com/) for this example:
 
 ```bash
 $ npm install lodash --save-dev
 ```
 
-Require the lodash library in the entry file, and use it to sort a list of users by name age:
+Require the lodash library and use it to sort a list of users by age:
 
 **src/index.js**  
 
@@ -114,7 +114,7 @@ var byAge = sortBy(users, 'age');
 console.log(byAge);
 ```
 
-Run **webpack** again and you should see the same results in your console, but now **bundle.js** only includes the code needed for the **sortBy** function and not the entire lodash library.
+Run **webpack** again and you should see the same results in your console, but now **bundle.js** only includes the code needed for the **sortBy** function and not the entire lodash library. Modularization for the win!
 
 We've only scratched the surface of features and power that Webpack can bring to your workflow in this first part of the series. In Part Two we'll look at installing and working with **webpack-dev-server**, a tool that provides file watching, a live reload server, and completely automates the bundling process so you can focus on writing code.
 
