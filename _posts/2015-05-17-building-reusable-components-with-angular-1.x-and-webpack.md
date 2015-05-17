@@ -53,7 +53,7 @@ console.log('Hello Webpack!');
 
 and in `public/index.html`:
 
-```html
+```xhtml
 <!doctype html>
 <html lang="en">
     <head>
