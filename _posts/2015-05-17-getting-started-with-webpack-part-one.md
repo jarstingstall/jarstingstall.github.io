@@ -94,9 +94,9 @@ var byAge = _.sortBy(users, 'age');
 console.log(byAge);
 ```
 
-Run **webpack** from the root of the project and load the page in a browswer. You should see the list of users sorted by age in your console. Very cool. Integrating 3rd party npm packages in your client-side application code with one line.
+Run **webpack** from the root of the project and load the page in a browser. You should see the list of users sorted by age in the console. Very cool. Integrating 3rd party npm packages in your client-side application code with one line.
 
-This can be taken a step further by only requiring the **sortBy** function. This is possible because the lodash npm package breaks each function into it's own module.
+This can be taken a step further by only requiring the **sortBy** function. This is possible because the lodash npm package breaks each function into it's own module that can be required individually.
 
 **src/index.js**  
 
@@ -114,7 +114,7 @@ var byAge = sortBy(users, 'age');
 console.log(byAge);
 ```
 
-Run **webpack** again and you should see the same results in your console, but now **bundle.js** only includes the code needed for the **sortBy** function and not the entire lodash library. Modularization for the win!
+Run **webpack** again and you should see the same results in the console, but now **public/bundle.js** only includes the code needed for the **sortBy** function and not the entire lodash library. Modularization for the win!
 
 We've only scratched the surface of Webpack's features and the benefits it can bring to your workflow. In Part Two we'll look at installing and working with **webpack-dev-server**, a tool that provides a file watcher, a live reload server, and completely automates the bundling process so you can focus on writing code.
 
