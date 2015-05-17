@@ -5,6 +5,8 @@ title: "Getting Started With Webpack: Part One"
 
 [Webpack](http://webpack.github.io/) is a module bundler that allows us to write modular client-side JavaScript code without having to manage the order in which the modules are loaded in the browser. With support for CommonJS, AMD, and ES6 module systems, integrating 3rd party libraries with your application code has never been simpler. Wepback is an extremely powerful tool that is much more than a module bundler. This series will take you from the basics of installing and configuring Webpack to exploring some of it's more advanced features. 
 
+### Installation
+
 To get started, install Webpack globally:
 
 ```bash
@@ -21,6 +23,8 @@ Next, create a directory for the project with this structure:
 │   └── index.js
 └── webpack.config.js
 ```
+
+### Configuration
 
 Configuring Webpack is very straight foward. For the simplest of setups it only needs the location of the entry JavaScript file and where to output the bundled file.
 
@@ -67,6 +71,8 @@ $ webpack
 ```
 
 Not too exciting yet, but Webpack should have created a file at `public/bundle.js`, and if you load `public/index.html` in the browser you should see "Hello Webpack!" in your console.
+
+### CommonJS Module Loading
 
 Now we'll look at Webpack's ability to load CommonJS style modules in the browser. First, install the popular JavaScript utility library [lodash](https://lodash.com/) in your project directory:
 
