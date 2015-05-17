@@ -25,7 +25,8 @@ Next, create a directory for the project with this structure:
 
 Configuring Webpack is very straight foward. For the simplest of setups it only needs the location of the entry JavaScript file and where to output the bundled file. In `webpack.config.js`, add:
 
-**webpack.config.js**  
+**webpack.config.js** 
+
 ```js
 module.exports = {
     entry: './src/index.js',
