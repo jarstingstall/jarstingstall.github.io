@@ -24,9 +24,9 @@ $ npm install webpack webpack-dev-server -g
 Next, create a fresh directory for the project and set up this structure:
 
 ```
-|--public
-  |--index.html
-|--src
-  |--index.js
-|--webpack.config.js
+|-- public
+    |-- index.html
+|-- src
+    |-- index.js
+|-- webpack.config.js
 ```
