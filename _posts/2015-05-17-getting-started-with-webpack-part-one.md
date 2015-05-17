@@ -3,7 +3,7 @@ layout: post
 title: "Getting Started With Webpack: Part One"
 ---
 
-[Webpack](http://webpack.github.io/) is a module bundler that allows us to write modular client-side JavaScript code without the hassle of managing script loading order in the browser. With support for **CommonJS**, **AMD**, and **ES6** module systems, integrating 3rd party libraries with your application code has never been simpler. Wepback is an extremely powerful tool that is much more than a module bundler. This series will take you from the basics of installing and configuring Webpack to exploring some of it's more advanced features. 
+This is the first installment in a series of posts on [Webpack](http://webpack.github.io/docs/), one of the newer kids on the frontend build tool block. In this first post we'll cover setting up Webpack on your machine and look at loading CommonJS modules in the browser.
 
 ## Setup
 
