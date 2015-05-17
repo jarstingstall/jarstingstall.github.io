@@ -24,7 +24,7 @@ Next, create a directory for the project with this structure:
 └── webpack.config.js
 ```
 
-Configuring Webpack is very straight foward. For the simplest of setups it only needs the location of the entry JavaScript file and where to output the bundled file.
+Configuring Webpack is very straight foward. For the simplest of setups all that's needed is the location of the entry JavaScript file and where to output the bundled file.
 
 **webpack.config.js** 
 
@@ -38,9 +38,7 @@ module.exports = {
 }
 ```
 
-The entry file is where all of the modules needed for a page will be included. You can have multiple entry and output files, a pair for each page of your application, ensuring that you're users aren't being served unused code. 
-
-Let's test that we've set everything up properly:
+ Let's test that we've set everything up properly:
 
 **src/index.js**  
 
@@ -78,7 +76,7 @@ Now we'll look at Webpack's ability to load CommonJS style modules in the browse
 $ npm install lodash --save-dev
 ```
 
-Require the lodash library in the entry file, and use it to sort a list of users by name and age:
+Require the lodash library in the entry file, and use it to sort a list of users by name age:
 
 **src/index.js**  
 
