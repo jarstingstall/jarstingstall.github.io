@@ -31,3 +31,15 @@ Next, create a fresh directory for the project with this simple structure:
 │   └── index.js
 └── webpack.config.js
 ```
+
+Configuring Webpack is very straight foward. For the most simple setup it only needs the location of the entry javascript file and where to put the bundled file:
+
+```node
+module.exports = {
+    entry: ['./src/index.js'],
+    output: {
+        path: './public',
+        filename: 'bundle.js'
+    }
+}
+```
