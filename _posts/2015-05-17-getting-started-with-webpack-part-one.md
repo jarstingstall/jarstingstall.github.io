@@ -45,7 +45,7 @@ Let's test that we've set everything up properly:
 **src/index.js**  
 
 ```js
-console.log('Hello Webpack!');
+document.querySelector('body').innerHTML = 'Hello Webpack!';
 ```
 
 **public/index.html**  
@@ -68,7 +68,7 @@ Next, from the root of the project directory run:
 $ webpack
 ```
 
-Not too exciting yet, but Webpack should have created a file at `public/bundle.js`, and if you load `public/index.html` in the browser you should see "Hello Webpack!" in your console.
+Nothing too exciting yet, but Webpack should have created a file at **public/bundle.js**. If you load **public/index.html** in a browser you should see "Hello Webpack!".
 
 ## CommonJS Module Loading
 
