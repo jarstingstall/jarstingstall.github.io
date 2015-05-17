@@ -13,4 +13,11 @@ In this post, we'll go through the process of creating a reusable component usin
 ## Webpack Setup
 
 [Webpack](http://webpack.github.io/) is a module bundler that allows us to write modular JavaScript code and not 
-have to worry about managing a list of `<script` tags and the order in which they're loaded in the browser. It supports CommonJS, AMD, and ES6 module systems, providing the ability to easily integrate 3rd party libraries with your application code. It has some killer features, a few of which we'll see soon that, in my opinion, make it more powerful than similar tools.
+have to worry about managing a list of `<script>` tags and the order in which they're loaded in the browser. It supports CommonJS, AMD, and ES6 module systems, providing the ability to easily integrate 3rd party libraries with your application code. It has some killer features, a few of which we'll see soon that, in my opinion, make it more powerful than similar tools.
+
+To get started, we'll install the following npm packages globally:
+
+```
+$ npm install webpack webpack-dev-server -g
+```
+
