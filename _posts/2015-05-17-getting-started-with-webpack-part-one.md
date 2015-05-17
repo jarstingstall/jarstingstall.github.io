@@ -3,8 +3,7 @@ layout: post
 title: "Getting Started With Webpack: Part One"
 ---
 
-[Webpack](http://webpack.github.io/) is a module bundler that allows us to write modular JavaScript code and not 
-have to worry about managing a list of `<script>` tags and the order in which they're loaded in the browser. It supports CommonJS, AMD, and ES6 module systems, providing the ability to easily integrate 3rd party libraries with your application code. It has some killer features, a few of which we'll see soon that, in my opinion, make it more powerful than similar tools.
+[Webpack](http://webpack.github.io/) is a module bundler that allows us to write modular client-side JavaScript code without having to manage the order in which the modules are loaded in the browser. With support for CommonJS, AMD, and ES6 module systems, integrating 3rd party libraries with your application code has never been simpler. Wepback is an extremely powerful tool that is much more than a module bundler. This series will take you from the basics of installing and configuring Webpack to exploring some of it's more advanced features. 
 
 To get started, install Webpack globally:
 
@@ -93,9 +92,9 @@ var byAge = _.sortBy(users, 'age');
 console.log(byAge);
 ```
 
-Run `webpack` from the root of the project and load the page in a browswer. You should see the list of users sorted by age in your console. Very cool. Integrating 3rd party npm packages in your client-side application code with one line.
+Run **webpack** from the root of the project and load the page in a browswer. You should see the list of users sorted by age in your console. Very cool. Integrating 3rd party npm packages in your client-side application code with one line.
 
-This can be taken a step further by only requiring the `sortBy` function. This is possible because the lodash npm package breaks each function into it's own module.
+This can be taken a step further by only requiring the **sortBy** function. This is possible because the lodash npm package breaks each function into it's own module.
 
 **src/index.js**  
 
@@ -113,7 +112,7 @@ var byAge = sortBy(users, 'age');
 console.log(byAge);
 ```
 
-Run `webpack` again and you should see the same results in your console, but now `bundle.js` only includes the code needed for the `sortBy` function and not the entire lodash library.
+Run **webpack** again and you should see the same results in your console, but now **bundle.js** only includes the code needed for the **sortBy** function and not the entire lodash library.
 
-We've only scratched the surface of features and power that Webpack can bring to your workflow in this first part of the series. In Part Two we'll look at installing and working with webpack-dev-server`, a tool that provides file watching, a live reload server, and completely automates the bundling process so you can focus on writing code.
+We've only scratched the surface of features and power that Webpack can bring to your workflow in this first part of the series. In Part Two we'll look at installing and working with **webpack-dev-server**, a tool that provides file watching, a live reload server, and completely automates the bundling process so you can focus on writing code.
 
