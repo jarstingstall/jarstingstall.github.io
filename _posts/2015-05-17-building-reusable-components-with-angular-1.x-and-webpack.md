@@ -17,7 +17,7 @@ have to worry about managing a list of `<script>` tags and the order in which th
 
 To get started, we'll install the following npm packages globally:
 
-```
+```shell
 $ npm install webpack webpack-dev-server -g
 ```
 
