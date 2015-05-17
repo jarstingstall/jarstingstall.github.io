@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Reusable Components with Angular and Webpack
+title: "Getting Started With Webpack: Part One"
 ---
 
 [Webpack](http://webpack.github.io/) is a module bundler that allows us to write modular JavaScript code and not 
