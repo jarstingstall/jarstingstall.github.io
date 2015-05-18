@@ -3,7 +3,7 @@ layout: post
 title: "Getting Started With Webpack: Part One"
 ---
 
-This is the first installment in a series of posts on [Webpack](http://webpack.github.io/docs/), a module bundler with a great set of features that distinguish it from similar tools. In this post we'll cover setting up Webpack on your machine and loading CommonJS modules in the browser.
+This is the first installment in a series of posts on [Webpack](http://webpack.github.io/docs/), a module bundler with a great set of features that distinguish it from similar tools. Part One covers setting up Webpack and loading CommonJS modules in the browser.
 
 ## Setup
 
@@ -24,7 +24,7 @@ Next, create a directory for the project with this structure:
 └── webpack.config.js
 ```
 
-Configuring Webpack is very straight foward. For the simplest of setups all that's needed is the location of the main entry file and where to output the bundled file. In a future post we'll look at how to set up multiple entry and output files.
+Configuring Webpack is very straight foward. For the simplest of setups all that's needed is the location of the main entry file and where to output the bundled file. A future post in the series will cover how to set up multiple entry and output files.
 
 **webpack.config.js** 
 
@@ -38,7 +38,7 @@ module.exports = {
 }
 ```
 
-Let's test that we've set everything up properly:
+To test that Webpack is installed and configured properly:
 
 **src/index.js**  
 
@@ -66,11 +66,11 @@ Next, from the root of the project directory run:
 $ webpack
 ```
 
-Nothing too exciting yet, but you should have a bundled file at **public/bundle.js**. If you load **public/index.html** in a browser you should see "Hello Webpack!" in the console.
+Nothing too exciting yet, but you should have a bundled file at **public/bundle.js**. If you load **public/index.html** in a browser you should see "Hello Webpack!" in the console. If you're interested in how Webpack works under the hood, checkout the well commented **public/bundle.js** file.
 
 ## CommonJS Module Loading
 
-Now we'll look at Webpack's ability to load CommonJS style modules in the browser. We'll use [lodash](https://lodash.com/) for this example:
+Similar to Browserify, Webpack has the ability to bundle CommonJS style modules for use in the browser. Install the [lodash](https://lodash.com/) npm package for this example:
 
 ```bash
 $ npm install lodash --save-dev
@@ -94,9 +94,9 @@ var byAge = _.sortBy(users, 'age');
 console.log(byAge);
 ```
 
-Run **webpack** from the root of the project and load the page in a browser. You should see the list of users sorted by age in the console. Very cool. Integrating 3rd party npm packages in your client-side application code with one line.
+Run **webpack** from the root of the project and load the page in a browser. You should see the list of users sorted by age in the console. Very cool. Integrating 3rd party npm packages in your client-side JavaScript modules with a simple "require".
 
-This can be taken a step further by only requiring the **sortBy** function. This is possible because the lodash npm package breaks each function into it's own module that can be required individually.
+This can be taken a step further by only requiring the **sortBy** function. The lodash npm package breaks each function into it's own module that can be required individually.
 
 **src/index.js**  
 
