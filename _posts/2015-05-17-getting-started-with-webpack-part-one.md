@@ -26,9 +26,8 @@ Next, create a directory for the project with this structure:
 
 Configuring Webpack is very straight foward. For the simplest of setups all that's needed is the location of the main entry file and where to output the bundled file. A future post in the series will cover how to set up multiple entry and output files.
 
-**webpack.config.js** 
-
 ```js
+// webpack.config.js
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -40,15 +39,13 @@ module.exports = {
 
 To test that Webpack is installed and configured properly:
 
-**src/index.js**  
-
 ```js
+// src/index.js
 console.log('Hello Webpack!');
 ```
 
-**public/index.html**  
-
 ```html
+<!-- public/index.html -->
 <!doctype html>
 <html lang="en">
     <head>
@@ -78,9 +75,8 @@ $ npm install lodash --save-dev
 
 Require the lodash library and use it to sort a list of users by age:
 
-**src/index.js**  
-
 ```js
+// src/index.js
 var _ = require('lodash');
 
 var users = [
@@ -98,9 +94,8 @@ Run **webpack** from the root of the project and load the page in a browser. You
 
 This can be taken a step further by only requiring the **sortBy** function. The lodash npm package breaks each function into it's own module that can be required individually.
 
-**src/index.js**  
-
 ```js
+// src/index.js
 var sortBy = require('lodash/collection/sortBy');
 
 var users = [
