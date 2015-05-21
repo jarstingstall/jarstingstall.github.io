@@ -28,6 +28,7 @@ Configuring Webpack is very straight foward. For the simplest of setups all that
 
 ```js
 // webpack.config.js
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -41,11 +42,13 @@ To test that Webpack is installed and configured properly:
 
 ```js
 // src/index.js
+
 console.log('Hello Webpack!');
 ```
 
 ```html
 <!-- public/index.html -->
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -77,6 +80,7 @@ Require the lodash library and use it to sort a list of users by age:
 
 ```js
 // src/index.js
+
 var _ = require('lodash');
 
 var users = [
@@ -96,6 +100,7 @@ This can be taken a step further by only requiring the **sortBy** function. The 
 
 ```js
 // src/index.js
+
 var sortBy = require('lodash/collection/sortBy');
 
 var users = [
