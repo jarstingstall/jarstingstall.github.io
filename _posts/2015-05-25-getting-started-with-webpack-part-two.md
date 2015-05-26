@@ -79,4 +79,4 @@ var byName = sortBy(users, 'name');
 console.log(byName);
 ```
 
-With very little setup and configuration we have a local development server that will watch files for changes, recompile the bundle file, and reload the page in the browser. In Part Three we'll look at how to split our code into multiple bundles and extract common modules into a single bundle to optimize for performance in single page applications.
+With very little setup and configuration we have a local development server that will watch files for changes, recompile the bundle file, and reload the page in the browser. In Part Three we'll look at Webpack's loaders, a killer feature that allows you to preprocess files as you "require" them and also load in any file (css, html, images, fonts, etc...) as a module. You may find that Webpack's loaders will eliminate the need for a task based build tool like Grunt or Gulp.
