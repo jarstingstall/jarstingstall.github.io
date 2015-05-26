@@ -3,7 +3,7 @@ layout: post
 title: "Getting Started With Webpack: Part Two"
 ---
 
-Part Two of this series on Webpack will introduce **webpack-dev-server**, a tool that offers a local development server with file watching, automated bundling, and a live reload server.
+Part Two of this series on Webpack will introduce [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html), a tool that offers a local development server with file watching, automated bundling, and a live reload server.
 
 First, install webpack-dev-server globally:
 
