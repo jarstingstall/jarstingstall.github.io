@@ -36,7 +36,7 @@ This is all that is needed to install and configure the server. From the command
 $ webpack-dev-server
 ```
 
-Webpack has created the bundle file and started a development server. Visit **localhost:8080** in the browser, and you should see the same results from Part One of this series in the console. A cool feature of **webpack-dev-server** is that it does not write the bundle files to disc, but instead stores them in memory. To test this out, delete the bundle file at **public/bundle.js** and refresh the page. Look in the console and you should still see the same results.
+Webpack has created the bundle file and started a development server. Visit **localhost:8080** in the browser, and you should see the same results from [Part One](http://jarstingstall.github.io/getting-started-with-webpack-part-one/) of this series in the console. A cool feature of **webpack-dev-server** is that it does not write the bundle files to disc, but instead stores them in memory. To test this out, delete the bundle file at **public/bundle.js** and refresh the page. Look in the console and you should still see the same results.
 
 While **webpack-dev-server** is running, you no longer need to run **webpack** when you make changes to your files. It watches your files and recompile the bundle file when anything changes. To test this out, sort the users by name instead of age:
 
