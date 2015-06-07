@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Started With Webpack: Part Two"
+title: "Getting Started With Webpack, Part Two: Webpack Dev Server"
 ---
 
 Part Two of this series on Webpack will introduce [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html), a tool that offers a local development server with file watching, automated bundling, and a live reload server. The code for this post is available [here](https://github.com/jarstingstall/getting-started-with-webpack/tree/part-two).
