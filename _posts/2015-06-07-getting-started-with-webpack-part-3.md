@@ -3,7 +3,9 @@ layout: post
 title: "Getting Started With Webpack, Part Three: Transpiling ES6"
 ---
 
-Webpack loaders perform the work of "tasks" in other build tools and "transforms" in Browserify. Building on our work from the previous two posts, let's introduce some loaders into our workflow. Loaders can be installed with npm:
+Webpack loaders perform the work of "tasks" in other build tools and "transforms" in Browserify. Building on our work from the previous two posts, let's introduce some loaders into our workflow. 
+
+Loaders can be installed with npm:
 
 ```bash
 $ npm install babel-loader --save-dev
