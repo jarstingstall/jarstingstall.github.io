@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Started With Webpack, Part Three: Transpiling ES6"
+title: "Getting Started With Webpack - Part Three: Transpiling ES6"
 ---
 
 Webpack loaders perform the work of "tasks" in Gulp and Grunt and are very similar to "transforms" in Browserify. Building on our work from the previous two posts, let's convert our application code to ES6 and use a loader to transpile it to ES5.  
