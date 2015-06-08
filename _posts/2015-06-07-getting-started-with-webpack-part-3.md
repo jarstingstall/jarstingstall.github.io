@@ -11,7 +11,7 @@ Loaders can be installed with npm:
 $ npm install babel-loader --save-dev
 ``` 
 
-The [babel-loader](https://github.com/babel/babel-loader) will allow us to take advantage of ES6 features by transpiling the code to ES5 before being bundled. Setting up loaders is very simple:
+The [babel-loader](https://github.com/babel/babel-loader) package will allow us to take advantage of ES6 features by transpiling the code to ES5 before being bundled. Setting up loaders is very simple:
 
 ```js
 // webpack.config.js
