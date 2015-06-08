@@ -73,10 +73,10 @@ import {users} from './users';
 import {User} from './User';
 
 sortBy(users, 'name')
-    .map(function(user) {
+    .map(user => {
         return new User(user.name, user.age);
     })
-    .forEach(function(user) {
+    .forEach(user => {
         console.log(user.display);
     });
 ```
