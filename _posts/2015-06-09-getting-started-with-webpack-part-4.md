@@ -104,6 +104,8 @@ function buildHTML() {
 
 Load the page in your browser and you should see each user's display message in the color we specified. If you still have __webpack-dev-server__ running you can update the __$primary-color__ variable in __src/_colors.scss__ and see the color update in the browser.
 
+## Local Scope
+
 A great feature of Webpack's __css-loader__ is locally scoped style declarations. This allows you to write modular CSS without worrying about global naming collisions. To test this feature out, make the following adjustments:
 
 ```sass
