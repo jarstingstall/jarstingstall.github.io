@@ -104,8 +104,6 @@ function buildHTML() {
 
 Load the page in your browser and you should see each user's display message in the color we specified. If you still have __webpack-dev-server__ running you can update the __$primary-color__ variable in __src/_colors.scss__ and see the color update in the browser.
 
-## Local Scope
-
 A great feature of Webpack's __css-loader__ is locally scoped style declarations. This allows you to write modular CSS without worrying about global naming collisions. To test this feature out, make the following adjustments:
 
 ```sass
@@ -131,6 +129,6 @@ The module will return an object that we can use to access the class name that i
 `<p class="${styles.user}">${user.display}</p>`
 ```
 
-Load the page in your browser and you'll see that css-loader generates a hash for the class name on each of the <p> tags and also in the "styles.css" file. With this feature you shouldn't ever have to worry about global CSS naming collisions again!
+Load the page in your browser and you'll see that css-loader generates a hash for the class name on each of the tags and also in the "styles.css" file. With this feature you shouldn't ever have to worry about global CSS naming collisions again!
 
 In the next post, we'll look at creating multiple entry point files and extracting common code into a separate bundle.
