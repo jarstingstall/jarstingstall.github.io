@@ -3,7 +3,9 @@ layout: post
 title: "Getting Started With Webpack - Part Four: SASS and CSS Loaders"
 ---
 
-One of Webpack's features that sets it apart from similar tools is the ability to load modules other than JavaScript such as CSS and HTML. To get started incorporating CSS files into our Webpack workflow we'll need to install the following packages:
+One of Webpack's features that sets it apart from similar tools is the ability to load modules other than JavaScript such as CSS and HTML. In this post we'll look at how Webpack handles pre-processing SASS and allows us to write modular CSS.  
+
+To get started install the following packages:
 
 ```bash
 $ npm install css-loader sass-loader extract-text-webpack-plugin --save-dev
